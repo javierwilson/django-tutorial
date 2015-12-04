@@ -11,6 +11,7 @@ class Question(models.Model):
 
     question_text = models.CharField(max_length=200)
     comentario = models.CharField(max_length=500)
+    question_number = models.IntegerField(default=1)
     pub_date = models.DateTimeField('date published')
     comment = models.CharField(max_length=200)
 
